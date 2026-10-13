@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+:root {
+  /* Design Tokens from design_system_ui_ux_specification.md */
+  --primary-900: #0f2942;
+  --primary-700: #1a446c;
+  --primary-500: #2563eb;
+  
+  --accent-500: #f97316;
+  --accent-600: #ea580c;
+  
+  --success-500: #16a34a;
+  --success-600: #15803d;
+  
+  --neutral-50: #f8fafc;
+  --neutral-100: #f1f5f9;
+  --neutral-200: #e2e8f0;
+  --neutral-400: #94a3b8;
+  --neutral-600: #475569;
+  --neutral-700: #334155;
+  --neutral-900: #0f172a;
+
+  --background: var(--neutral-50);
+  --foreground: var(--neutral-900);
+}
+
+@theme inline {
+  --color-primary-900: var(--primary-900);
+  --color-primary-700: var(--primary-700);
+  --color-primary-500: var(--primary-500);
+  
+  --color-accent-500: var(--accent-500);
+  --color-accent-600: var(--accent-600);
+  
+  --color-success-500: var(--success-500);
+  --color-success-600: var(--success-600);
+  
+  --color-neutral-50: var(--neutral-50);
+  --color-neutral-100: var(--neutral-100);
+  --color-neutral-200: var(--neutral-200);
+  --color-neutral-400: var(--neutral-400);
+  --color-neutral-600: var(--neutral-600);
+  --color-neutral-700: var(--neutral-700);
+  --color-neutral-900: var(--neutral-900);
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
